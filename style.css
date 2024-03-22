@@ -69,3 +69,22 @@ body {
 }
 
 /* COMPONENTS */
+
+.plan--btn {
+  background: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+  border: none;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem var(--clr-accent-400);
+}
+
+.plan--btn:hover,
+.plan--btn:focus {
+  box-shadow: none;
+  background: var(--clr-accent-800);
+  transition: all 400ms ease-in-out;
+}
