@@ -36,9 +36,23 @@
 
 /* CSS RESET */
 
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* BODY/GLOBAL */
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--clr-neutral-400);
+  color: var(--clr-primary-400);
   font-family: var(--ff-primary);
 }
 
