@@ -19,7 +19,7 @@
 :root {
   --ff-primary: 'Roboto', sans-serif;
 
-  --fs-sm: 0.75rem;
+  --fs-sm: 0.875rem;
   --fs-base: 1rem;
   --fs-baseMed: 1.25rem;
   --fs-md: 1.5rem;
@@ -56,6 +56,20 @@ body {
   font-family: var(--ff-primary);
 }
 
+.section__wrapper {
+  max-width: 378px;
+  padding-top: 2rem;
+  padding-inline: 5rem;
+  padding-bottom: 4rem;
+  background: var(--clr-neutral-100);
+  border-radius: 2rem;
+  box-shadow: 0 1rem 1rem -0.5rem var(--clr-accent-800);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* UTILITY */
 
 .visually-hidden:not(:focus):not(:active) {
@@ -73,10 +87,12 @@ body {
 .plan--btn {
   background: var(--clr-primary-400);
   color: var(--clr-neutral-100);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
   border: none;
   border-radius: 6px;
-  margin-top: 1.5rem;
-  padding: 0.8rem;
+  margin-top: 2rem;
+  padding-block: 1.5rem;
   width: 100%;
   cursor: pointer;
   box-shadow: 0 0.5rem 1rem var(--clr-accent-400);
@@ -87,4 +103,78 @@ body {
   box-shadow: none;
   background: var(--clr-accent-800);
   transition: all 400ms ease-in-out;
+}
+
+/* ICON */
+
+.icon__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid var(--clr-accent-400);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.icon-tabler-x {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  border: 1px solid var(--clr-accent-400);
+  border-radius: 50%;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+/* PLAN */
+
+.plan__title {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.price__wrapper {
+  margin: 1rem 0 2.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.plan__price span {
+  font-size: var(--fs-lg);
+  font-weight: 700;
+}
+
+.plan__subtitle {
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  margin-top: 1rem;
+  letter-spacing: 0.8px;
+}
+
+/* DOWNLOAD */
+
+.download__wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.download {
+  width: 100%;
+  padding-inline: 0.8rem;
+  padding-block: 0.5rem;
+  border-radius: 0.8rem;
+  border: 2px solid var(--clr-accent-400);
+  cursor: pointer;
+}
+
+.download__amount {
+  font-weight: 700;
+  font-size: var(--fs-baseMed);
 }
