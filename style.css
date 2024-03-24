@@ -56,7 +56,8 @@ body {
   font-family: var(--ff-primary);
 }
 
-.section__wrapper {
+.section__wrapper,
+.subscribed {
   max-width: 378px;
   padding-top: 2rem;
   padding-inline: 5rem;
@@ -177,4 +178,23 @@ body {
 .download__amount {
   font-weight: 700;
   font-size: var(--fs-baseMed);
+}
+
+/* SUBSCRIBE */
+
+.subscribed {
+  display: none;
+  text-align: center;
+  position: relative;
+}
+
+.subscribed p {
+  margin-top: 1.5rem;
+  line-height: 1.4;
+}
+
+.subscribed p span {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
